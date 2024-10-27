@@ -4,10 +4,12 @@ import viteLogo from "/vite.svg";
 import { setupCounter } from "./counter.js";
 
 document.querySelector("#app").innerHTML;
-let button = document.getElementById("button");
-const text = document.getElementById("text");
 
-function test() {
-  document.getElementById("text").style.backgroundColor = "red";
-}
-button=tsest();
+// Color Change With DOM
+const text = document.getElementById("box1");
+const button = document.getElementById("button");
+
+button.addEventListener("click", () => {
+  text.style.backgroundColor = "red";
+  text.style.transition = "2s";F
+});
