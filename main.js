@@ -11,5 +11,5 @@ const button = document.getElementById("button");
 
 button.addEventListener("click", () => {
   text.style.backgroundColor = "red";
-  text.style.transition = "2s";F
+  text.style.transition = "2s";
 });
