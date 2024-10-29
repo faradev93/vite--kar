@@ -5,14 +5,22 @@ button.addEventListener("click", () => {
   text.style.backgroundColor = "#c953dd";
   text.style.transition = "2s";
 });
+let age = 35;
+const sum = 4 * 6 + age + "gerr ${age}";
+console.log(sum);
 
-const newParagraph = document.createElement("p");
-newParagraph.innerText = "کصکش سلام";
-document.body.appendChild(newParagraph);
-newParagraph.style.fontSize = "50px";
-newParagraph.style.fontFamily = "B Yekan";
-//
-const button2 = document.createElement("button");
-button2.innerText = "بزن رو من";
-document.body.appendChild(button2);
-button2.style.fontSize="75px"
+try {
+  riskyFunction();
+} catch (error) {
+  console.error("ریسکی فانکشن اجرا نشد");
+  finally{console.log(4+5)}
+}
+
+function test() {
+  if (age - 5 === 15) {
+    throw new Error(" تو جایکش");
+  } else if (age > 30 && age <= 40) {
+    console.log("khobe:))))");
+  }
+}
+test();
